@@ -4,38 +4,41 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>在github上展示你的静态页面 | Web前端开发</title>
+    <title>hexo + github搭建属于自己的博客 | Web前端开发</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="longchaoan">
     
 
     
-    <meta name="description" content="在这之前必须会使用git基本的命令第一步：在github上新建一个仓库，上传静态页面源码到github上
-（1）初始化仓库1git init
-（2）添加所有文件到缓冲区1git add .
-（3）保存修改内容1git commit -m &amp;apos;备注修改的内容&amp;apos;
-（4）将本地仓库连接远程服务器1git remote add origin &amp;lt;server&amp;gt;
-（5）提交上传源">
+    <meta name="description" content="1在搭建之前：懂得一点点node，git，md语法，github，会比较轻松。
+第一步：配置环境
+
+node.js，到Node.js官网下载相应平台的最新版本，一路安装即可，作用：hexo基于node上
+安装git，用于提交博客源码到github上。
+
+第二步：安装hexoNode和Git都安装好后,首先创建一个文件夹,如blog,用户存放hexo的配置文件,然后进入blog里安装Hexo。执行如">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在github上展示你的静态页面">
-<meta property="og:url" content="http://yoursite.com/2017/01/26/github_web_html/index.html">
+<meta property="og:title" content="hexo + github搭建属于自己的博客">
+<meta property="og:url" content="http://yoursite.com/2017/01/30/blog/index.html">
 <meta property="og:site_name" content="Web前端开发">
-<meta property="og:description" content="在这之前必须会使用git基本的命令第一步：在github上新建一个仓库，上传静态页面源码到github上
-（1）初始化仓库1git init
-（2）添加所有文件到缓冲区1git add .
-（3）保存修改内容1git commit -m &amp;apos;备注修改的内容&amp;apos;
-（4）将本地仓库连接远程服务器1git remote add origin &amp;lt;server&amp;gt;
-（5）提交上传源">
-<meta property="og:updated_time" content="2017-01-26T05:07:48.038Z">
+<meta property="og:description" content="1在搭建之前：懂得一点点node，git，md语法，github，会比较轻松。
+第一步：配置环境
+
+node.js，到Node.js官网下载相应平台的最新版本，一路安装即可，作用：hexo基于node上
+安装git，用于提交博客源码到github上。
+
+第二步：安装hexoNode和Git都安装好后,首先创建一个文件夹,如blog,用户存放hexo的配置文件,然后进入blog里安装Hexo。执行如">
+<meta property="og:updated_time" content="2017-01-30T04:16:17.735Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在github上展示你的静态页面">
-<meta name="twitter:description" content="在这之前必须会使用git基本的命令第一步：在github上新建一个仓库，上传静态页面源码到github上
-（1）初始化仓库1git init
-（2）添加所有文件到缓冲区1git add .
-（3）保存修改内容1git commit -m &amp;apos;备注修改的内容&amp;apos;
-（4）将本地仓库连接远程服务器1git remote add origin &amp;lt;server&amp;gt;
-（5）提交上传源">
+<meta name="twitter:title" content="hexo + github搭建属于自己的博客">
+<meta name="twitter:description" content="1在搭建之前：懂得一点点node，git，md语法，github，会比较轻松。
+第一步：配置环境
+
+node.js，到Node.js官网下载相应平台的最新版本，一路安装即可，作用：hexo基于node上
+安装git，用于提交博客源码到github上。
+
+第二步：安装hexoNode和Git都安装好后,首先创建一个文件夹,如blog,用户存放hexo的配置文件,然后进入blog里安装Hexo。执行如">
 
     
     <link rel="alternative" href="/atom.xml" title="Web前端开发" type="application/atom+xml">
@@ -93,31 +96,52 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/01/26/github_web_html/" title="在github上展示你的静态页面" itemprop="url">在github上展示你的静态页面</a>
+      <a href="/2017/01/30/blog/" title="hexo + github搭建属于自己的博客" itemprop="url">hexo + github搭建属于自己的博客</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="longchaoan" target="_blank" itemprop="author">longchaoan</a>
 		
   <p class="article-time">
-    <time datetime="2017-01-26T04:07:46.756Z" itemprop="datePublished"> Published 2017-01-26</time>
+    <time datetime="2017-01-30T03:06:15.676Z" itemprop="datePublished"> Published 2017-01-30</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
-		<h2 id="在这之前必须会使用git基本的命令"><a href="#在这之前必须会使用git基本的命令" class="headerlink" title="在这之前必须会使用git基本的命令"></a>在这之前必须会使用git基本的命令</h2><p><code>第一步：</code>在github上新建一个仓库，上传静态页面源码到github上</p>
-<p>（1）初始化仓库<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure></p>
-<p>（2）添加所有文件到缓冲区<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure></p>
-<p>（3）保存修改内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m &apos;备注修改的内容&apos;</div></pre></td></tr></table></figure></p>
-<p>（4）将本地仓库连接远程服务器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add origin &lt;server&gt;</div></pre></td></tr></table></figure></p>
-<p>（5）提交上传源码文件到github上<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push -u origin master</div></pre></td></tr></table></figure></p>
-<p><code>第二步：</code>要展示你的静态页面，必须创建一个名为“gh-pages”的分支，手动创建“gh-pages”分支即可，在这里我们通过命令行创建，这种方式比较方便操作<br>（1）创建名为“gh-pages”分支<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch gh-pages</div></pre></td></tr></table></figure></p>
-<p>（2）切换到“gh-pages”上<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git checkout gh-pages</div></pre></td></tr></table></figure></p>
-<p>（3）查看是否切换成功<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch</div></pre></td></tr></table></figure></p>
-<p>（4）之后的操作和之前一样，只是push的时候是gh-pages<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git add .</div><div class="line">git commit -m &quot;update&quot;</div><div class="line">git push -u origin gh-pages</div></pre></td></tr></table></figure></p>
-<p><code>第三步：</code>最后可以直接访问页面了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//加入用户名，仓库名</div><div class="line">https://(user_name|org_name).github.io/repo_name</div></pre></td></tr></table></figure></p>
-<p>这是我做的地址可以参考下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">https://longchaoan.github.io/100du</div></pre></td></tr></table></figure></p>
+		<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">在搭建之前：懂得一点点node，git，md语法，github，会比较轻松。</div></pre></td></tr></table></figure>
+<p><code>第一步：</code>配置环境</p>
+<ul>
+<li>node.js，到Node.js官网下载相应平台的最新版本，一路安装即可，作用：hexo基于node上</li>
+<li>安装git，用于提交博客源码到github上。</li>
+</ul>
+<p><code>第二步：</code>安装hexo<br>Node和Git都安装好后,首先创建一个文件夹,如blog,用户存放hexo的配置文件,然后进入blog里安装Hexo。<br>执行如下命令安装Hexo：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo npm install -g hexo</div></pre></td></tr></table></figure></p>
+<p>执行init命令初始化hexo<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure></p>
+<p>生成静态页面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure></p>
+<p>启动本地服务进行文章的预览<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s</div></pre></td></tr></table></figure></p>
+<p>浏览器输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://localhost:4000</div></pre></td></tr></table></figure></p>
+<p><code>此时，如果你能看到hello word的文章就证明你成功搭建好属于自己的博客骨架</code></p>
+<p><code>第三步：</code>配置github<br>在github上建立一个仓库，名字必须为<code>用户名.github.io</code>，固定写法。<br>现在我们需要_config.yml文件，来建立关联，在你的博客根目录下找到文件_config.yml，推荐使用sublime打开，翻到最下面，修改以下信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">//repo:修改成自己对应的地址</div><div class="line">deploy:</div><div class="line"></div><div class="line">     type: git</div><div class="line"></div><div class="line">     repo: https://github.com/longchaoan/longchaoan.github.io.git</div><div class="line"></div><div class="line">     branch: master</div></pre></td></tr></table></figure></p>
+<p>然后执行命令进行关联<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p>最后执行命令上传<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<p>然后在浏览器中输入<a href="https://longchaoan.github.io" target="_blank" rel="external">https://longchaoan.github.io</a> 就行了，我的github的账户叫longchaoan,把这个改成你github的账户名就行了<br><code>此时，如果能成功浏览到博客，就证明你已经成功在github上搭建好自己的博客了，接下来只要添加文章即可</code></p>
+<p><code>第四步：</code>使用hexo发布文章</p>
+<ul>
+<li>此部分是建立在以上都成功的前提下</li>
+<li>在博客的根目录下，找到文件夹source，一直点击进去，会看到hello word.md文件，这个就是hexo初始化的文章源文件，我们发布的文章源文件也是放在这里，新建一个后缀名为.md的文件。</li>
+<li>这样我们就可以在里面写文章了，推荐使用sublime打开，写入你的文章保存即可，写文章需要懂一点点md语法，可以参考hello word.md源文件的语法，也可以百度上查，比较简单。</li>
+<li><p>文章写好后我们可以执行命令，生成静态页面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//生成静态页面，在博客根目录下会自动生成public文件夹，这个就是保存静态页面的文件夹</div><div class="line">hexo g</div></pre></td></tr></table></figure>
+</li>
+<li><p>接着可以启动本地服务进行预览，修改</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s</div></pre></td></tr></table></figure>
+</li>
+<li><p>满意后即可执行命令同步到github上</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a><code>总结：</code></h4><p>上面的都配置好后，平时发布文章就简单多了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">添加文章，执行命令</div><div class="line">hexo g</div><div class="line">同步文章</div><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<p>hexo默认的主题很丑，可以通过<a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">https://github.com/hexojs/hexo/wiki/Themes</a> 这个地址找到自己喜欢的主题，看相应的教程修改hexo默认主题。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -130,7 +154,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2017/01/26/github_web_html/" data-title="在github上展示你的静态页面 | Web前端开发" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/2017/01/30/blog/" data-title="hexo + github搭建属于自己的博客 | Web前端开发" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -143,19 +167,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2017/01/30/blog/" title="hexo + github搭建属于自己的博客">
-  <strong>上一篇：</strong><br/>
-  <span>
-  hexo + github搭建属于自己的博客</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2017/01/20/compatibility_JS/"  title="JS常见的兼容性问题及决解方法">
+<a href="/2017/01/26/github_web_html/"  title="在github上展示你的静态页面">
  <strong>下一篇：</strong><br/> 
- <span>JS常见的兼容性问题及决解方法
+ <span>在github上展示你的静态页面
 </span>
 </a>
 </div>
@@ -164,7 +180,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2017/01/26/github_web_html/" data-title="在github上展示你的静态页面" data-url="http://yoursite.com/2017/01/26/github_web_html/"></div>
+	<div class="ds-thread" data-thread-key="2017/01/30/blog/" data-title="hexo + github搭建属于自己的博客" data-url="http://yoursite.com/2017/01/30/blog/"></div>
 </section>
 
 
@@ -180,7 +196,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#在这之前必须会使用git基本的命令"><span class="toc-number">1.</span> <span class="toc-text">在这之前必须会使用git基本的命令</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#总结："><span class="toc-number">1.</span> <span class="toc-text">总结：</span></a></li></ol>
  
   </div>
 
